@@ -1,0 +1,93 @@
+#about { 
+	background-color: black;
+	padding: 125px; 
+}
+
+	#about-intro {
+		padding: 100px 0px;
+	}
+
+		#about-intro-bar {
+			border-top: 5px solid white;
+			width: 100px;
+			height: 3px;
+			display: block;
+		}
+
+		.about-intro-ts {
+			color: black;
+			text-shadow: var( --ts-white );
+		}
+		
+			#about-intro-ssss {
+				font-weight: bold;
+				animation: about-intro-keyframe 5s ease 0s infinite normal none running;
+			}
+			
+			@keyframes about-intro-keyframe {
+				0% { text-shadow: var( --ts-green ); }
+				50% { text-shadow: var( --ts-yellow ); }
+				100% { text-shadow: var( --ts-green ); }
+			}
+
+	/* END About Intro */
+
+	#about-content {
+		background-color: black;
+		margin: 100px 200px;
+		position: relative;
+	}
+	
+		.about-content-gif {
+			border: 8px solid black;
+			box-shadow: 8px 8px var( --green );
+			position: absolute;
+			width: auto;
+		}
+
+			#about-content-top-gif {
+				top: -50px;
+				right: -50px;
+				height: 350px;
+			}
+
+			#about-content-mid-gif {
+				top: 400px;
+				left: -100px; 
+				height: 250px;
+			}
+
+			#about-content-bot-gif {
+				bottom: -200px;
+				right: -50px;
+				height: 250px;
+			}
+
+		/* END Content GIF */
+
+		.about-content-row {
+			width: 100%;
+			padding: 50px;
+			margin-bottom: 50px;
+			background-color: black;
+			border: 10px solid var( --pink );
+			box-shadow: 10px 10px var( --green );
+		}
+
+			#about-content-top-row { 
+				width: 70%;
+			}
+
+			#about-content-mid-row {
+				padding: 50px;
+				padding-left: 30%;
+			}
+
+				.about-content-h1 {
+					color: var( --pink );
+					text-shadow: var( --yellow ) 3px 0px;
+				}
+
+		/* END Content Row */
+
+	/* END About Content */

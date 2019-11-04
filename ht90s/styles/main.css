@@ -1,0 +1,44 @@
+/* Global Variables */
+
+	:root {
+		--green: #00ff00;
+		--pink: #ff0067;
+		--yellow: #ffff00;
+
+		--ts-white: white -3px 0px, white 0px 3px, white 3px 0px, white 0px -3px; 
+		--ts-green: #00ff00 -3px 0px, #00ff00 0px 3px, #00ff00 3px 0px, #00ff00 0px -3px; 		
+		--ts-pink: #ff0067 -3px 0px, #ff0067 0px 3px, #ff0067 3px 0px, #ff0067 0px -3px; 
+		--ts-yellow: #ffff00 -3px 0px, #ffff00 0px 3px, #ffff00 3px 0px, #ffff00 0px -3px; 
+	}
+
+	@font-face {
+		font-family: 'stormfaze';
+		src: url( ../fonts/stormfaze.ttf );
+	}
+
+/* END Global Variables */
+
+* { transition: all .3s; }
+
+h1, h2, h3, h4 { font-family: 'stormfaze'; }
+
+body {
+	background-color: var( --pink );
+	margin: 1vh;
+}
+
+#body-main {
+	overflow-y: scroll; 
+	position: fixed;
+	width: 99.5%;
+}
+
+#body-main,
+#hero, 
+#hero-left, 
+#hero-bgtransition,
+#hero-right, 
+#sponsors, 
+#students { height: 98vh; }
+
+.white-text { color: white; }
