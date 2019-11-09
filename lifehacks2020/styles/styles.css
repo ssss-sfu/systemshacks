@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap');
+
+:root {
+  --navy: #1B3146;
+  --yellow: #FFDF00;
+  --green: #24CD8F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+  color: var(--navy);
+}
+
+/*-------------------------- GLOBAL --------------------------*/
+h1,h2,h3,h4 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.button {
+  background: var(--navy);
+  padding: 0.5rem 1.5rem;
+  border-radius: 100rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover, .button:active {
+  background: var(--green);
+  transition: background 0.3s;
+}
+
+/*-------------------------- NAV --------------------------*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 2.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover, .nav a:active {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.nav .button:hover, .nav .button:active{
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/*-------------------------- HERO --------------------------*/
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: url('../images/hero-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#hero h2 {
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
