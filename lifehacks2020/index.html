@@ -12,7 +12,6 @@
 </head>
 
 <body>
-  <!-- <div class="wrapper"> -->
   <nav class="nav wrapper">
     <h3><a href="#">LifeHacks</a></h3>
     <ul>
@@ -23,6 +22,7 @@
       <li><a href="#" class="button">Join the Hack</a></li>
     </ul>
   </nav>
+
   <div id="hero" class="wrapper">
     <div class="">
       <img src="" alt="Life Hacks Logo">
@@ -123,33 +123,71 @@
       <a href="#" class="button">Become a sponsor</a>
       <a href="#" class="button">Become a sponsor</a>
     </div>
-
-    <div id="faq">
-      <h4>Frequently Asked Questions</h4>
-    </div>
-
-    <footer>
-      <div class="">
-        <h1>Read to hack life?</h1>
-        <a href="#" class="button">Join Now</a>
-      </div>
-      <div class="">
-        <div class="footer__socials">
-          <i class="icon ion-logo-facebook"></i>
-          <i class="icon ion-logo-twitter"></i>
-          <i class="icon ion-logo-instagram"></i>
-        </div>
-        <ul>
-          <li>Contact Us</li>
-          <li>About the Event</li>
-          <li>Sponsors</li>
-          <li>SSSS</li>
-        </ul>
-      </div>
-    </footer>
   </div>
-  <!-- </div> -->
-  <script src="" async defer></script>
+
+  <div id="faq" class="wrapper">
+    <h3>Frequently Asked Questions <img src="./images/faq-marks.png" alt="Exclamation and question marks"></h3>
+    <div class="faq__questions">
+      <div class="faq__questions__left">
+        <button class="accordion">What is Life Hacks?</button>
+        <div class="accordion__panel">
+          <p>Life Hacks is all about increasing productivity and efficiency, in all walks of life. Participants have
+            12-hours to create a product that makes everyday life more convenient. They can create web applications,
+            mobile
+            applications, hardware hacks and much more.</p>
+        </div>
+
+        <button class="accordion">How many people can be on a team?</button>
+        <div class="accordion__panel">
+          <p>Everyone must have a group of 3-4 people.</p>
+        </div>
+
+        <button class="accordion">Can I use a previous project and continue from it?</button>
+        <div class="accordion__panel">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+      <div class="faq__questions__right">
+        <button class="accordion">Who can participate?</button>
+        <div class="accordion__panel">
+          <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion">Can we work alone?</button>
+        <div class="accordion__panel">
+          <p>Hackathons are a time to breed innovation and collaboration, and a great place to connect with other
+            hackers. We want to encourage that with Systems Hacks, so no, you can’t.</p>
+        </div>
+
+        <button class="accordion">I have no team! What am I going to do?</button>
+        <div class="accordion__panel">
+          <p>Don’t worry! We will have a Slack channel for team formation, and we’ll give you an opportunity to mingle
+            with other students before the event starts! Hackathons are just as fun with people you’ve just met!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="">
+      <h1>Read to hack life?</h1>
+      <a href="#" class="button">Join Now</a>
+    </div>
+    <div class="">
+      <div class="footer__socials">
+        <i class="icon ion-logo-facebook"></i>
+        <i class="icon ion-logo-twitter"></i>
+        <i class="icon ion-logo-instagram"></i>
+      </div>
+      <ul>
+        <li>Contact Us</li>
+        <li>About the Event</li>
+        <li>Sponsors</li>
+        <li>SSSS</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./scripts/faq_accordion.js" async defer></script>
 </body>
 
 </html>
