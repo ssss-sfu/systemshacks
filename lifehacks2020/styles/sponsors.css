@@ -1,0 +1,50 @@
+@import "global.css";
+
+#sponsors {
+  padding-top: 10rem;
+  background-image: url('../images/sponsors-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#sponsors p {
+  margin-bottom: 2.5rem;
+}
+
+.tiers {
+  margin-top: 2.5rem;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.175);
+  -moz-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.175);
+  box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.175);
+  box-sizing: initial;
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+}
+
+.tiers__panel {
+  padding-right: 1.5rem;
+  height: 100%;
+}
+
+.tiers__panel h4, .tiers__panel p {
+  text-align: center;
+}
+
+.tiers__panel p {
+  color: var(--green);
+}
+
+.tiers__panel ul {
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.tiers__panel ul li {
+  margin-bottom: 0.75rem;
+}

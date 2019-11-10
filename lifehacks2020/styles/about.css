@@ -1,0 +1,24 @@
+@import "global.css";
+
+.about__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  padding-top: 10rem;
+}
+
+.about__section img {
+  width: 40%;
+  margin-right: 10rem;
+}
+
+.about__section:nth-of-type(2) {
+  text-align: left;
+}
+
+.about__section:nth-of-type(2) img {
+  margin-right: 0;
+  margin-left: 10rem;
+}
