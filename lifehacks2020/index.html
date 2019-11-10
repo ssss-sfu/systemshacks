@@ -7,13 +7,20 @@
   <title>Life Hacks 2020</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./styles/styles.css">
+
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/sponsors.css">
+  <link rel="stylesheet" href="./styles/faq.css">
+  <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
   <nav class="wrapper nav">
-    <h3><a href="#">LifeHacks</a></h3>
+    <h3><a href="#hero">LifeHacks</a></h3>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
@@ -29,7 +36,7 @@
       <img src="" alt="SSSS Logo">
       <p>Simon Fraser University — February ?, 2020</p>
       <h1>Code life easier for</h1>
-      <h2>cat photo searching</h2>
+      <h2 id="example_rotation"></h2>
       <a href="#" class="button">Join the Hack</a>
     </div>
   </div>
@@ -118,10 +125,10 @@
           <li>Opportunity to speak at closing ceremony</li>
         </ul>
       </div>
-      <a href="#" class="button">Become a sponsor</a>
-      <a href="#" class="button">Become a sponsor</a>
-      <a href="#" class="button">Become a sponsor</a>
-      <a href="#" class="button">Become a sponsor</a>
+      <div class=""><a href="#" class="button">Become a sponsor</a></div>
+      <div class=""><a href="#" class="button">Become a sponsor</a></div>
+      <div class=""><a href="#" class="button">Become a sponsor</a></div>
+      <div class=""><a href="#" class="button">Become a sponsor</a></div>
     </div>
   </div>
 
@@ -144,19 +151,27 @@
 
         <button class="accordion">Can I use a previous project and continue from it?</button>
         <div class="accordion__panel">
-          <p>Lorem ipsum...</p>
+          <p>No, all projects must be built from scratch.</p>
+        </div>
+
+        <button class="accordion">What if I don't have any experience?</button>
+        <div class="accordion__panel">
+          <p>Systems Hacks is a beginner-friendly hackathon and we welcome students of all levels. There will be mentors
+            to help you out if you have any problems or questions.</p>
         </div>
       </div>
+
       <div>
         <button class="accordion">Who can participate?</button>
         <div class="accordion__panel">
-          <p>Lorem ipsum...</p>
+          <p>Students of any education level are eligible to participate in System Hacks.</p>
         </div>
 
-        <button class="accordion">Can we work alone?</button>
+        <button class="accordion">Can I work alone?</button>
         <div class="accordion__panel">
-          <p>Hackathons are a time to breed innovation and collaboration, and a great place to connect with other
-            hackers. We want to encourage that with Systems Hacks, so no, you can’t.</p>
+          <p>You can but will not be eligible for judging. Hackathons are a time to breed innovation and collaboration,
+            and a great place to connect with other hackers. We want to encourage that with Systems Hacks!
+          </p>
         </div>
 
         <button class="accordion">I have no team! What am I going to do?</button>
@@ -170,7 +185,7 @@
 
   <footer class="wrapper footer">
     <div>
-      <h1>Read to hack life?</h1>
+      <h1>Ready to hack life?</h1>
       <a href="#" class="button">Join Now</a>
     </div>
     <div>
@@ -187,7 +202,10 @@
       </ul>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="./scripts/smooth_scroll.js" async defer></script>
+  <script src="./scripts/typewriter_effect.js" async defer></script>
   <script src="./scripts/faq_accordion.js" async defer></script>
 </body>
 

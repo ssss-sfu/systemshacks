@@ -1,0 +1,53 @@
+@import "global.css";
+
+#faq {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+#faq img {
+  width: 5rem;
+  transform: translateY(1.75rem);
+}
+
+.faq__questions {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-top: 4rem;
+}
+
+/*-------------------------- ACCORDION --------------------------*/
+.accordion, .accordion:active {
+  background: none;
+  border: none;
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  outline: none;
+}
+
+.accordion:hover {
+  cursor: pointer;
+}
+
+.accordion::after {
+  content: "▼";
+  margin-left: 1rem;
+  color: var(--yellow);
+}
+
+.active::after {
+  content: "⯅";
+}
+
+.accordion__panel {
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion__panel p {
+  font-size: 1.15rem;
+  width: 90%;
+}
