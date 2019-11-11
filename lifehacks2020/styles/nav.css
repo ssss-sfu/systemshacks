@@ -8,9 +8,17 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   position: fixed;
-  background-color: #fff;
+  background-color: transparent;
   width: 100%;
   z-index: 10;
+  transition: top 0.5s, box-shadow 0.3s, color 0.2s;
+}
+
+.nav--scrolled {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.075);
+  box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.075);
 }
 
 .nav li {
