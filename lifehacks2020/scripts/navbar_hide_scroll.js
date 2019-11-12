@@ -1,7 +1,7 @@
 let prevScrollpos = window.pageYOffset;
 let navbar = document.getElementById("nav");
 
-window.onscroll = function () {
+window.onscroll = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     navbar.classList.add("nav--scrolled");
   } else if (document.body.scrollTop <= 80 || document.documentElement.scrollTop <= 80) {
