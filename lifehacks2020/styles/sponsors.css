@@ -4,15 +4,16 @@
   padding-top: 10rem;
   background-image: url('../images/sponsors-bg.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right;
 }
 
 #sponsors p {
   margin-bottom: 2.5rem;
+  width: 75%;
 }
 
 .tiers {
-  margin-top: 2.5rem;
+  margin-top: 5.75rem;
   padding: 3rem 2rem;
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -35,7 +36,8 @@
   text-align: center;
 }
 
-.tiers__panel p {
+#sponsors .tiers__panel p {
+  width: 100%;
   color: var(--green);
 }
 
