@@ -1,17 +1,23 @@
 @import "global.css";
 
 .footer {
-  background: url("../images/footer-bg.png");
-  background-position: center bottom;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.footer img {
+  width: 20rem;
+  margin-bottom: 2.5em;
 }
 
 .footer h1, .footer i, .footer li {
-  color: #fff;
+  color: var(--navy);
 }
 
 .footer h1 {
@@ -45,13 +51,14 @@
 .footer a, .footer li {
   list-style-type: none;
   text-decoration: none;
-  color: #fff;
+  color: var(--navy);
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
+  display: inline;
 }
 
 .footer a:hover, .footer a:active, .footer i:hover, .footer i:active {
-  color: var(--yellow);
+  color: var(--green);
   transition: color 0.2s;
 }
 

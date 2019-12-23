@@ -4,6 +4,8 @@
   --navy: #1B3146;
   --yellow: #FFDF00;
   --green: #24CD8F;
+  --white: #fff;
+  --darker-navy: #0E1923;
 }
 
 * {
@@ -11,7 +13,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Muli', sans-serif;
-  color: var(--navy);
+  color: var(--white);
+}
+
+body {
+  background-color: var(--darker-navy);
 }
 
 h1,h2,h3,h4 {
@@ -45,7 +51,7 @@ p {
 }
 
 .button {
-  background-color: var(--navy);
+  background-color: var(--green);
   padding: 0.5rem 1.5rem;
   border-radius: 100rem;
   color: #fff;
@@ -54,6 +60,7 @@ p {
 }
 
 .button:hover, .button:active {
-  background-color: var(--green);
+  background-color: var(--yellow);
+  color: var(--navy);
   transition: all 0.3s;
 }

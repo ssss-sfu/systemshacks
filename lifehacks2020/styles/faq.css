@@ -41,7 +41,8 @@
 }
 
 .accordion__panel {
-  background-color: #fff;
+  background-color: var(--darker-navy);
+  color: var(--white);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;

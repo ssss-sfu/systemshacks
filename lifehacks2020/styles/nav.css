@@ -11,23 +11,19 @@
   background-color: transparent;
   width: 100%;
   z-index: 10;
-  transition: top 0.5s, box-shadow 0.3s, color 0.2s;
-}
-
-.nav--scrolled {
-  background-color: #fff;
-  -webkit-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.075);
-  -moz-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.075);
-  box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.075);
+  color: var(--navy);
+  transition: top 0.5s, box-shadow 0.3s, color 0.2s, background-color 0.3s;
 }
 
 .nav li {
   list-style-type: none;
   display: inline;
   margin-left: 2.5rem;
+  font-weight: 700;
 }
 
 .nav a {
+  color: var(--navy);
   text-decoration: none;
 }
 
@@ -36,7 +32,24 @@
   transition: opacity 0.3s;
 }
 
+.nav .button {
+  color: var(--white);
+}
+
 .nav .button:hover, .nav .button:active{
   opacity: 1;
+  background-color: var(--yellow);
+  color: var(--navy);
   transition: all 0.3s;
+}
+
+.nav--scrolled {
+  background-color: var(--darker-navy);
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.15);
+}
+
+.nav--scrolled a {
+  color: var(--white);
 }

@@ -1,25 +1,23 @@
 @import "global.css";
 
 #hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
   background: url('../images/hero-bg.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: center;
+  position: relative;
 }
 
-#hero h2 {
-  font-weight: 700;
-  margin-bottom: 1.25rem;
+#hero .button {
+  position: absolute;
+  right: 50%;
+  bottom: 15%;
+  transform: translateX(57%);
+  font-size: 1.25em;
 }
 
-#hero p {
-  font-size: 1.5rem;
-}
-
-#hero .logo {
-  width: 14rem;
+#hero .button:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
 }

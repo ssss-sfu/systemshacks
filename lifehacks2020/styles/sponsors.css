@@ -33,6 +33,7 @@
 }
 
 .tiers__panel h4, .tiers__panel p {
+  color: var(--navy);
   text-align: center;
 }
 
@@ -48,5 +49,6 @@
 }
 
 .tiers__panel ul li {
+  color: var(--navy);
   margin-bottom: 0.75rem;
 }
