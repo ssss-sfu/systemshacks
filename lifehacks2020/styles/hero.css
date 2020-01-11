@@ -12,7 +12,7 @@
 #hero .button {
   position: absolute;
   right: 50%;
-  bottom: 15%;
+  bottom: 14.5%;
   transform: translateX(57%);
   font-size: 1.25em;
 }
@@ -21,3 +21,9 @@
   background-color: var(--yellow);
   color: var(--navy);
 }
+
+@media only screen and (max-width: 700px) {
+  #hero .button {
+    font-size: 1em;
+  }
+} 

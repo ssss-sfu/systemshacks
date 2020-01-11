@@ -50,6 +50,21 @@ p {
   padding-left: 7rem;
 }
 
+@media only screen and (max-width: 1250px) {
+  .wrapper {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+} 
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+} 
+
+
 .button {
   background-color: var(--green);
   padding: 0.5rem 1.5rem;
