@@ -2,91 +2,72 @@
 
 #sponsors {
   padding-top: 10rem;
-  /* background-image: url('../images/sponsors-bg.png'); */
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
-#sponsors p {
-  margin-bottom: 2.5rem;
-  width: 75%;
+#sponsors img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s;
 }
 
-.tiers {
-  margin-top: 5.75rem;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; */
-  /* align-items: center; */
-  /* padding: 3rem 2rem; */
-  /* display: grid;
-  grid-template-columns: repeat(4, 25%); */
-  /* border-radius: 1.25rem;
-  -webkit-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.175);
-  -moz-box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.175);
-  box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.175); */
-  /* box-sizing: initial; */
-  /* overflow: hidden; */
-  /* text-align: center; */
-  /* background: #fff; */
+#sponsors img:hover {
+  transform: scale(1.1);
 }
 
-.tiers__panel {
-  /* padding-right: 1.5rem; */
-  background-color: #fff;
-  border-radius: 1.25rem;
-  padding: 3em 1em;
-  margin-right: 1.5em;
-  float: left;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* position: relative; */
-  /* height: 30em; */
-  /* height: 100%; */
+#sponsors h3::after {
+  content: '_';
+  color: var(--yellow);
 }
 
-.tiers__panel button {
-  position: absolute;
-  bottom: 0;
-}
-
-.tiers__panel h4, .tiers__panel p {
-  color: var(--navy);
+#sponsors div {
   text-align: center;
+  padding-top: 8rem;
 }
 
-#sponsors .tiers__panel p {
-  width: 100%;
-  color: var(--green);
+.tier-title img {
+  width: 60vw;
 }
 
-.tiers__panel ul {
-  margin-left: 2rem;
-  /* margin-bottom: 2.5rem; */
-  text-align: left;
+.tier-2 img {
+  width: 42.5vw;
+  margin-bottom: 5em;
 }
 
-.tiers__panel ul li {
-  color: var(--navy);
-  margin-bottom: 0.75rem;
+.tier-1 img {
+  width: 30vw;
+}
+
+.tier-food img {
+  width: 25vw;
 }
 
 @media only screen and (max-width: 1000px) {
   #sponsors {
-    margin-top: 1rem;
     padding-top: 5rem;
   }
 
-  #sponsors p {
-    margin-bottom: 2.5rem;
-    width: 100%;
+  #sponsors div {
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .tier-2 img {
+    margin-bottom: 3em;
   }
 } 
 
 @media only screen and (max-width: 700px) {
-  #sponsors  {
+  #sponsors {
     padding-top: 3rem;
+  }
+
+  #sponsors div {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .tier-2 img {
+    margin-bottom: 1.5em;
   }
 } 
