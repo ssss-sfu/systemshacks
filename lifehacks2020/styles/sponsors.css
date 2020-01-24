@@ -36,6 +36,7 @@
 
 .tier-1 img {
   width: 30vw;
+  margin-bottom: 5em;
 }
 
 .tier-food img {
@@ -52,7 +53,7 @@
     padding-top: 3rem;
   }
 
-  .tier-2 img {
+  .tier-2 img, .tier-1 img {
     margin-bottom: 3em;
   }
 } 
@@ -67,7 +68,7 @@
     padding-top: 1.5rem;
   }
 
-  .tier-2 img {
+  .tier-2 img, .tier-1 img {
     margin-bottom: 1.5em;
   }
 } 
