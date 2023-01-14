@@ -1,0 +1,35 @@
+@import 'tokens.scss';
+
+.footer {
+  background: $background-footer;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+
+  // Seb image
+  & > img {
+    max-width: 15rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  & > div {
+    // SSSS logo 
+    & > img {
+      width: 75%;
+      max-width: 21.25rem;
+      margin-bottom: 1.13rem;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+
+      img {
+        max-width: 3.13rem;
+      }
+    }
+  }
+}
