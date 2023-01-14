@@ -4,4 +4,26 @@
   max-width: $container-max-width;
   padding: clamp(1rem, 7vw, 12rem);
   margin: auto;
+  color: $colour-text;
+  background: $colour-background;
+
+  h1, h2, h3, h4, h5, h6 {
+    background-color: $colour-text-heading-fallback;
+    background-image: $colour-text-heading;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: $text-size-h1;
+  }
+
+  h2 {
+    font-size: $text-size-h2;
+  }
 }

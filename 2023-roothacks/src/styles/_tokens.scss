@@ -2,11 +2,13 @@
   Colours
 */
 
-:root {
-  --color-white: #fff;
-}
+$colour-background: linear-gradient(180deg, #5849FF 0%, #00008D 100%);
+$colour-background-footer: linear-gradient(180deg, #08077B 0%, #1B0A3F 98.63%);
+$colour-background-button: linear-gradient(270deg, #14A2A2 14.36%, #2CCA6C 97.52%);
 
-$background-footer: linear-gradient(180deg, #08077B 0%, #1B0A3F 98.63%);
+$colour-text: #fff;
+$colour-text-heading: linear-gradient(270deg, #02C8C8 2.48%, #0EF069 97.52%);
+$colour-text-heading-fallback: #0BE488; // If linear gradient is not supported, use this
 
 /*
   Typography
@@ -26,6 +28,9 @@ $background-footer: linear-gradient(180deg, #08077B 0%, #1B0A3F 98.63%);
   font-weight: 600;
   font-style: normal;
 }
+
+$text-size-h1: 5.94rem;
+$text-size-h2: 3rem;
 
 /*
   Media Queries
