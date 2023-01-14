@@ -29,8 +29,9 @@ $color-text-heading-fallback: #0BE488; // If linear gradient is not supported, u
   font-style: normal;
 }
 
-$text-size-h1: 5.94rem;
-$text-size-h2: 3rem;
+$text-size-h1: clamp(2.5rem, 8vw, 5.94rem);
+$text-size-h2: clamp(1.5rem, 6vw, 3rem);
+$text-size-button: clamp(1.25rem, 4vw, 2.25rem);
 
 /*
   Media Queries

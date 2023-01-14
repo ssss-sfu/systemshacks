@@ -1,0 +1,12 @@
+@import 'tokens.scss';
+
+.btn {
+  background: $color-background-button;
+  font-size: $text-size-button;
+  color: $color-text;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.88rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
