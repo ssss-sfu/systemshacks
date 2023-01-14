@@ -1,0 +1,73 @@
+/*
+  Colours
+*/
+
+$color-background: linear-gradient(180deg, #5849FF 0%, #00008D 100%);
+$color-background-footer: linear-gradient(180deg, #08077B 0%, #1B0A3F 98.63%);
+$color-background-button: linear-gradient(270deg, #14A2A2 14.36%, #2CCA6C 97.52%);
+
+$color-text: #fff;
+$color-text-heading: linear-gradient(270deg, #02C8C8 2.48%, #0EF069 97.52%);
+$color-text-heading-fallback: #0BE488; // If linear gradient is not supported, use this
+
+/*
+  Typography
+*/
+@font-face {
+  font-family: "Hubot Sans";
+  src: url('/2023-roothacks/build/assets/fonts/Hubot-Sans-Regular.woff2');
+  src: url('/2023-roothacks/build/assets/fonts/Hubot-Sans-Regular.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hubot Sans";
+  src: url('/2023-roothacks/build/assets/fonts/Hubot-Sans-SemiBold.woff2');
+  src: url('/2023-roothacks/build/assets/fonts/Hubot-Sans-SemiBold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$text-size-h1: clamp(2.5rem, 8vw, 5.94rem);
+$text-size-h2: clamp(1.5rem, 6vw, 3rem);
+$text-size-button: clamp(1.25rem, 4vw, 2.25rem);
+
+/*
+  Media Queries
+*/
+$container-max-width: 1500px;
+$gutter: 1.75rem;
+
+$tablet-min-width: 768px;
+$desktop-min-width: 1025px;
+
+@mixin viewport($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: ($tablet-min-width - 1)) {
+      @content;
+    }
+  } @else if $media == mobile-tablet {
+    @media only screen and (max-width: ($desktop-min-width - 1)) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (min-width: $tablet-min-width) and (max-width: ($desktop-min-width - 1)) {
+      @content;
+    }
+  } @else if $media == tablet-desktop {
+    @media only screen and (min-width: $tablet-min-width) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: $desktop-min-width) {
+      @content;
+    }
+  }
+}
+
+/*
+  Animation
+*/
+$transition-speed-fast: 0.2s;
+$easing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
