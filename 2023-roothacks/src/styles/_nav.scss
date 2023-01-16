@@ -1,0 +1,26 @@
+@import '_tokens.scss';
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  padding-top: 1rem;
+  text-decoration: none;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+      font-size: 1.1em;
+    }
+  }
+
+  img {
+    width: 5rem;
+  }
+}
