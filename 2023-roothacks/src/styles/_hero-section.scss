@@ -14,15 +14,22 @@
 
   @include viewport(tablet) {
     img#tree-cloud {
-      width: 17.5em;
+      width: 15em;
     }
   }
 
   @include viewport(mobile) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     img#tree-cloud {
-      width: 100%;
+      width: 75%;
+      z-index: 0;
     }
+  }
+}
+
+@include viewport(mobile) {
+  #hero-section {
+    text-align: center;
   }
 }
 

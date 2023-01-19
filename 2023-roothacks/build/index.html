@@ -7,21 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/images/nav-tree.svg" />
-
+  <script src="scripts/navbar.js" defer></script>
   <title>RootHacks | SystemsHacks 2023</title>
 </head>
 
 <body>
-  <nav id="nav">
-    <img src="./assets/images/nav-tree.svg" alt="Tree logo in navigation" />
-    <ul>
-      <li><a href="#hero-section">About</a></li>
-      <li><a href="#past-section">The Past</a></li>
-      <li><a href="#sponsor-section">Sponsors</a></li>
-      <li><a href="#faq-section">FAQ</a></li>
-      <li><a href="https://ssss-sfu.github.io/" target="_blank">SSSS</a></li>
-    </ul>
-  </nav>
+  <header class="header">
+    <div class="mobile-header">
+      <img class="logo" src="./assets/images/nav-tree.svg" alt="Tree logo in navigation" />
+      <span  class="hamburger">^<br/>OPEN</span>
+    </div>
+
+    <nav class="nav">
+      <ul class="list">
+        <li><a href="#hero-section">About</a></li>
+        <li><a href="#past-section">The Past</a></li>
+        <li><a href="#sponsor-section">Sponsors</a></li>
+        <li><a href="#faq-section">FAQ</a></li>
+        <li><a href="https://ssss-sfu.github.io/" target="_blank">SSSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <section id="hero-section" class="container">
     <article>
       <h1>RootHacks</h1>
@@ -34,7 +41,7 @@
       <br>
       <button class="btn">Apply Now!</button>
     </article>
-    <img id="tree-cloud" src="./assets/images/hero-tree.svg"
+    <img id="tree-cloud" src="./assets/images/hero-tree2.svg"
       alt="RootHacks 2023 Logo, The tree with clouds floating above" />
   </section>
   <footer class="container footer">
