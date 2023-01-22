@@ -1,0 +1,39 @@
+@import 'tokens.scss';
+
+
+.dropdown {
+    // leaf icon
+    & > img {
+        float:left;
+        max-width: 5rem;
+        margin: auto;
+        filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
+    }
+
+    & > details {
+        float:right;
+        cursor: auto;
+        background: $color-background-textbox;
+        text-align: left;
+        color: $color-text-heading;
+        padding: 2rem;
+
+        // Firefox
+        & summary {
+            position: relative;
+            &:after {
+                content: url(/2023-roothacks/build/assets/images/icons/arrow.png);
+            }
+            &[open] summary:after {
+                content: url(/2023-roothacks/build/assets/images/icons/arrow.png);
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    /*
+    & summary {
+        list-style: none;
+    }
+    */
+}
