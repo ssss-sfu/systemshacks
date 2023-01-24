@@ -2,6 +2,7 @@
 
 html, body {
     background: $color-background;
+    scroll-behavior: smooth;
 }
 .container {
   max-width: $container-max-width;

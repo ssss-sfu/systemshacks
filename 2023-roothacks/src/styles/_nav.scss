@@ -10,16 +10,6 @@
 
   .hamburger {
     display: none;
-    text-align: center;
-    font-size: $text-size-button;
-    cursor: pointer;
-    &:hover {
-      transform: translateY(-0.25rem);
-    }
-
-    &:active {
-      transform: translateY(0.25rem);
-    }
   }
   img {
     width: 5rem;
@@ -37,6 +27,7 @@
       a {
         color: inherit;
         text-decoration: inherit;
+        font-weight: bold;
         font-size: 1.1em;
 
         &:hover {
@@ -47,34 +38,26 @@
   }
 
   @include viewport(mobile) {
-    .mobileHeader {
+    .mobile-header {
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-between;
+      padding: 1.5em;
       align-items: center;
-
-      .logo {
-        transition: all $transition-speed-fast ease;
-
-        &:hover {
-          transform: translateY(-0.25rem);
-          width: 50em;
-        }
-
-        &:active {
-          transform: translateY(0.25rem);
-        }
-      }
-
+      
       .hamburger {
         display: block;
+        width: 2em;
+        cursor: pointer;
+        color: white;
       }
     }
 
     .nav {
       display: none;
-
+      padding: 1em;
+      width: 50%;
       .list {
         grid-auto-flow: row;
         list-style-type: none;
@@ -82,10 +65,7 @@
         padding-inline-start: 0px;
         column-gap: 0;
         justify-items: center;
-
-        li {
-          border-bottom: 1px solid white;
-        }
+        padding: 1em;
       }
     }
   }
@@ -93,6 +73,8 @@
 @include viewport(mobile) {
   .header {
     flex-direction: column;
-    padding: 20px;
+    padding: 0;
+    background-color: darkblue;
+
   }
 }

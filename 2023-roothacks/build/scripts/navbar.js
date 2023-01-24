@@ -1,5 +1,5 @@
 const nav = document.querySelector(".nav");
-const logo = document.querySelector(".logo");
+const dropdown = document.querySelector(".hamburger");
 let open;
 
 function openMenu() {
@@ -15,17 +15,18 @@ function openMenu() {
 function checkWindowWidth() {
   if (window.innerWidth >= minTabletWidth) {
     nav.style.display = "block"
-    logo.onclick = null;
-    logo.style.cursor = "auto"
+    dropdown.onclick = null;
+    dropdown.style.cursor = "auto"
     open = true;
   } else {
     nav.style.display = "none";
     open = false;
-    logo.onclick = openMenu;
-    logo.style.cursor = "pointer";
+    dropdown.onclick = openMenu;
+    dropdown.style.cursor = "pointer";
   }
 }
 let minTabletWidth = 768;
+
 // make sure resized navbar in tablet or desktop not disappear
 window.addEventListener("resize", checkWindowWidth);
 checkWindowWidth(); // called once when page loaded
