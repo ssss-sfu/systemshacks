@@ -3,6 +3,22 @@
 .fun-fact {
   padding-top: 0;
 
+  &.reversed {
+    gap: 2rem;
+
+    @include viewport(mobile) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+
+    @include viewport(tablet-desktop) {
+      & > img {
+        margin-left: -25%;
+      }
+    }
+  }
+
   .fact-card {
     height: fit-content;
     padding: 1rem 2.25rem;
