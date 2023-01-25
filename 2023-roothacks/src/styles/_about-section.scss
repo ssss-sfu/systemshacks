@@ -1,0 +1,38 @@
+@import "./tokens.scss";
+
+#about-section, #ssss-section {
+  h3 {
+    font-size: 1rem;
+  }
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: clamp(0.5rem, 3vw, 3rem);
+
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .icon-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+  }
+
+  @include viewport(desktop) {
+    flex-direction: row;
+
+    .icons-container {
+      justify-content: space-between;
+    }
+  }
+}
+
+@include viewport(desktop) {
+  #about-section article {
+    order: 1
+  }
+}
