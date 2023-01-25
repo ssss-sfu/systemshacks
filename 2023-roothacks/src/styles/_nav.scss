@@ -7,10 +7,23 @@
   align-items: center;
   color: white;
   text-decoration: none;
+  position: fixed;
+  width: 100%;
+  transition: top 0.5s, color 0.4s, background-color 0.3s;
+  z-index: 1;
+
+  &.header-scrolled {
+    opacity: 1;
+    background-color: darkblue;
+
+  }
+  
 
   .hamburger {
     display: none;
   }
+
+
   img {
     width: 5rem;
   }
@@ -70,11 +83,12 @@
     }
   }
 }
+
+
 @include viewport(mobile) {
   .header {
     flex-direction: column;
     padding: 0;
     background-color: darkblue;
-
   }
 }
