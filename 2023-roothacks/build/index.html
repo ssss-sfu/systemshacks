@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/nav-tree.svg" />
+  <script src="scripts/navbar.js" defer></script>
   <title>RootHacks | SystemsHacks 2023</title>
 </head>
+
 <body>
-  <section class="container">
-    <h1>RootHacks</h1>
-    <h2>Subheading</h2>
-    <button class="btn">Apply Now!</button>
+  <header class="header">
+    <div class="mobile-header">
+      <img class="logo" src="./assets/images/nav-tree.svg" alt="Tree logo in navigation" />
+      <img class="hamburger" src="./assets/images/bars-solid.svg" alt="hamburger dropdown">
+    </div>
+
+    <nav class="nav">
+      <ul class="list">
+        <li><a href="#hero-section">About</a></li>
+        <li><a href="#past-section">The Past</a></li>
+        <li><a href="#sponsor-section">Sponsors</a></li>
+        <li><a href="#faq-section">FAQ</a></li>
+        <li><a href="https://ssss-sfu.github.io/" target="_blank">SSSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero-section" class="container">
+    <article>
+      <h1>RootHacks</h1>
+      <h3>March 4th 2023</h3>
+
+      <p>Software Systems Student Society <br/>presents their annual hackathon!</p>
+      <br>
+      <p>Applications close X/XX/XX</p>
+      <br>
+      <br>
+      <button class="btn">Apply Now!</button>
+    </article>
+    <img id="tree-cloud" src="./assets/images/hero-tree2.svg"
+      alt="RootHacks 2023 Logo, The tree with clouds floating above" />
+  </section>
+
+  <section id="about-section" class="container">
+    <article>
+      <h2>What is RootHacks?</h2>
+      <p>Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.</p>
+      <div class="icons-container">
+        <article class="icon-container">
+          <img src="assets/images/icons/icon-time.svg" alt="Time icon">
+          <h3>XX Hours</h3>
+        </article>
+        <article class="icon-container">
+          <img src="assets/images/icons/icon-people.svg" alt="Time icon">
+          <h3>XX Participants</h3>
+        </article>
+        <article class="icon-container">
+          <img src="assets/images/icons/icon-location.svg" alt="Time icon">
+          <h3>XX Location</h3>
+        </article>
+      </div>
+    </article>
+    <img src="assets/images/roothacks-logo.svg" alt="RootHacks logo">
+  </section>
+
+  <section id="ssss-section" class="container">
+    <article>
+      <h2>Software Systems Student Society</h2>
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+    </article>
+    <img src="assets/images/placeholder.svg" alt="">
   </section>
 
   <section class="container fun-fact reversed">
@@ -54,6 +115,45 @@
     <img src="./assets/images/laptop.png" />
   </section>
 
+  <section class="container">
+    <h2>Sponsors</h2>
+    <div class="sponsors">
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+      <a class="sponsor" href="#">
+        <img src="assets/images/ssss-logo-full.svg" alt="SSSS logo">
+      </a>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <img src="./assets/images/footer-seb.png" alt="The Software Systems Mascot, Seb, with a seedling sprouting from the top of his head" />
@@ -69,4 +169,5 @@
     </div>
   </footer>
 </body>
+
 </html>

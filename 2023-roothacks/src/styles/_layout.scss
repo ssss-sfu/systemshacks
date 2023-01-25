@@ -1,5 +1,9 @@
 @import 'tokens.scss';
 
+html, body {
+    background: $color-background;
+    scroll-behavior: smooth;
+}
 .container {
   max-width: $container-max-width;
   padding: clamp(1rem, 7vw, 12rem);
