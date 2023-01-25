@@ -1,11 +1,15 @@
 @import 'tokens.scss';
 
+html, body {
+    background: $color-background;
+    scroll-behavior: smooth;
+}
 .container {
   max-width: $container-max-width;
   padding: clamp(1rem, 7vw, 12rem);
   margin: auto;
   color: $color-text;
-  background: $color-background;
+  // background: $color-background;
 
   h1, h2, h3, h4, h5, h6 {
     background-color: $color-text-heading-fallback;
