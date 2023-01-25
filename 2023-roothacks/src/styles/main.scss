@@ -2,8 +2,10 @@
 @use 'layout.scss';
 @use 'button.scss';
 @use 'footer.scss';
-@use '_hero-section.scss';
-@use '_nav.scss';
+@use 'hero-section.scss';
+@use 'nav.scss';
+@use 'sponsors.scss';
+@use 'about-section';
 
 /*
   CSS Resest by Josh Comeau
