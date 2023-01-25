@@ -1,0 +1,45 @@
+@import 'layout.scss';
+@import 'tokens.scss';
+
+.the-past {
+  h2 {
+    font-size: $text-size-h1;
+    margin-bottom: 2.63rem;
+  }
+
+  h3 {
+    font-size: $text-size-h2;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    & > div + div {
+      margin-top: clamp(5rem, 10vw , 8rem);
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      & > div {
+        width: 100%;
+      }
+
+      img {
+        min-width: 0;
+        width: 100%;
+      }
+
+      @include viewport(tablet-desktop) {
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 3rem;
+        
+        &:last-child {
+          flex-direction: row;
+        }
+      }
+    } 
+  }
+}

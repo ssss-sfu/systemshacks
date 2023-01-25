@@ -1,0 +1,66 @@
+@import './tokens';
+
+.fun-fact {
+  padding-top: 0;
+
+  &.reversed {
+    gap: 2rem;
+
+    @include viewport(mobile) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+
+    @include viewport(tablet-desktop) {
+      & > img {
+        margin-left: -25%;
+      }
+    }
+  }
+
+  .fact-card {
+    height: fit-content;
+    padding: 1rem 2.25rem;
+    position: relative;
+    
+    &::before {
+      position: absolute;
+      content: '';
+      inset: 0;
+      display: block;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 66.15%, rgba(255, 255, 255, 0) 100%);
+      background-repeat: no-repeat;
+      border-radius: 1.88rem;
+      mask-image: url("/2023-roothacks/build/assets/images/fun-fact-clip.svg");
+      -webkit-mask-image: url("/2023-roothacks/build/assets/images/fun-fact-clip.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: cover;
+      -webkit-mask-position: 100% 100%;
+    }
+
+    h3 {
+      font-size: $text-size;
+      background-image: linear-gradient(45deg, white, transparent);
+      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+  }  
+
+  @include viewport(tablet-desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .fact-card  {
+      width: 45rem;
+    }
+
+    & > img {
+      min-width: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
