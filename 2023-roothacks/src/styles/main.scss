@@ -1,8 +1,16 @@
 @use 'tokens.scss';
 @use 'layout.scss';
 @use 'button.scss';
+@use 'fun-facts.scss';
+@use 'the-past.scss';
 @use 'footer.scss';
+@use 'hero-section.scss';
+@use 'nav.scss';
+@use 'sponsors.scss';
+@use 'about-section';
 @use 'dropdown.scss';
+
+@import 'tokens.scss';
 
 /*
   CSS Resest by Josh Comeau
@@ -18,12 +26,12 @@
 }
 
 html, body {
-  height: 100%;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: $color-background;
 }
 
 img, picture, video, canvas, svg {

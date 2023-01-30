@@ -1,0 +1,36 @@
+@import "./tokens.scss";
+
+#hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  gap: 2rem;
+  padding-top: 5em;
+
+  img#tree-cloud {
+    width: 20em;
+  }
+
+  @include viewport(tablet) {
+    img#tree-cloud {
+      width: 15em;
+    }
+  }
+
+  @include viewport(mobile) {
+    flex-direction: column-reverse;
+    img#tree-cloud {
+      width: 75%;
+      z-index: 0;
+    }
+  }
+}
+
+@include viewport(mobile) {
+  #hero-section {
+    text-align: center;
+  }
+}
+
